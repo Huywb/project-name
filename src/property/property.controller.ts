@@ -18,7 +18,7 @@ export class PropertyController {
   }
 
   @Patch("")
-  update(@Body() Body:CreatePropertyDto, @RequestHeader(new ValidationPipe({validateCustomDecorators:true})) headers:headerPropertyDto) {
+  update(@Body() Body:CreatePropertyDto, @RequestHeader(headerPropertyDto) headers:headerPropertyDto) {
     return headers;
   }
   
